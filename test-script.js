@@ -133,7 +133,7 @@ const finder = {
 		const prev = $('<button />')
 			.attr({
 				'id': 'finderPrev',
-				'class': 'btn prev-btn-finder btn-finder-prev',
+				'class': 'prev-btn-finder btn-finder-prev',
 			})
 			.appendTo(finderElemContent);
 
@@ -146,7 +146,7 @@ const finder = {
 		const next = $('<button />')
 			.attr({
 				'id': 'finderNext',
-				'class': 'btn next-btn-finder btn-finder-next',
+				'class': 'next-btn-finder btn-finder-next',
 			})
 			.appendTo(finderElemContent);
 
@@ -159,7 +159,7 @@ const finder = {
 		const close = $('<button />')
 			.attr({
 				'id': 'finderClose',
-				'class': 'btn close-btn-finder btn-finder-close',
+				'class': 'close-btn-finder btn-finder-close',
 			})
 			.appendTo(finderElemContent);
 

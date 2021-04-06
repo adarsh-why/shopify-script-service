@@ -98,14 +98,14 @@ body {
 }
 
 .finder-input {
-	font-size: medium;
-	background-color: #f2f2f2;
-	margin-left: 11%;
-	flex-grow: 1;
-	width: 40%;
-	height: 30px;
-	border: none;
-	padding: 8px;
+	font-size: medium !important;
+	background-color: #f2f2f2 !important;
+	margin-left: 11% !important;
+	flex-grow: 1 !important;
+	width: 40% !important;
+	height: 30px !important;
+	border: none !important;
+	padding: 8px !important;
 	outline: none !important;
 }
 
