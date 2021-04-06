@@ -46,6 +46,7 @@ body {
 	}
 
 	.searchIcon {
+		z-index: 999;
 		position: fixed;
 		background-color: #ffffff;
 		width: 60px;
