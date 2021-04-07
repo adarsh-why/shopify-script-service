@@ -162,11 +162,23 @@ body {
 }
 
 .finder-count {
+	top: 27%;
+	color: #888;
+    position: absolute;
+    right: 30%;
+	background: none;
+	border: none;
+	text-align: center;
+	padding: 0;
+	outline: none !important;
+}
+
+/* .finder-count { */
 	/* display: -webkit-box;
 	display: -ms-flexbox;
 	display: -webkit-flex; */
 	/* display: flex; */
-	flex-direction: column;
+	/* flex-direction: column;
 	justify-content: center;
 	color: #888;
 	border-right: 1px solid #e5e5e5;
@@ -174,7 +186,7 @@ body {
 	margin-left: 5%;
 	padding-right: 5px;
 	white-space: nowrap;
-}
+} */
 
 .prev-btn-finder,
 .next-btn-finder,
