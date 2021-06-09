@@ -25,7 +25,7 @@ body {
 		top: -50px;
 		right: 0;
 		left: 0;
-		z-index: 999;
+		z-index: 99999;
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: -webkit-flex;
@@ -41,7 +41,6 @@ body {
 	}
 
 	.finder.active {
-		z-index: 999;
 		opacity: 0.9;
 		top: 0;
 	}
