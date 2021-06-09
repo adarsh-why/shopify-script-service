@@ -41,6 +41,7 @@ body {
 	}
 
 	.finder.active {
+		z-index: 999;
 		opacity: 0.9;
 		top: 0;
 	}
