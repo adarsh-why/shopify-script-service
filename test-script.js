@@ -11,6 +11,7 @@ function handler() {
 $('head').append(
 		`<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta http-equiv="content-type" content="application/javascript; charset=UTF-8">
 		<link rel="stylesheet" href="https://adarsh-why.github.io/shopify-script-service/style.css" />
 			<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
 			<!-- CSS -->
