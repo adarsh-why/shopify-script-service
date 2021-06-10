@@ -40,7 +40,10 @@ $('head').append(
     'position': 'relative'
   })
 
-  const searchIcon = $('<div class="searchIcon"/>')
+  const searchIcon = $('<div />').attr({
+		'id': 'searchIcon',
+		'class': 'searchIcon'
+	})
   //   .css(
   //   {
   //     'position': 'fixed',
@@ -123,11 +126,14 @@ const finder = {
 			}).text("Search")
 			.appendTo(finderElemContent);
 
-		const input = $('<input oninput="finder.hideElem()"/>')
+		const input = $('<input />')
 			.attr({
 				'id': 'finderInput',
 				'type': 'text',
 				'class': 'finder-input',
+			})
+			.on('input', function() {
+				$('.finder-search-text').hide();
 			})
 			.appendTo(finderElemContent);
 
@@ -173,6 +179,7 @@ const finder = {
 
 	closeFinder: () => {
 		$('#finder').removeClass('active');
+		$('#searchIcon').show();
 		$(finder.content).unhighlight();
 	},
 
@@ -284,8 +291,8 @@ const finder = {
     // script.src = "https://adarsh-why.github.io/shopify-script-service/jquery.finder.js";
     // script.type = "text/javascript";
     // body.append(script)
-
-    finder.activate()
+	  finder.activate()
+	  $('#searchIcon').hide();
     $(document).mousedown(function (event) {
 		if (event.which === 1) {
 			switch ($(event.target).attr('id') || $(event.target).parents().attr('id')) {
@@ -304,8 +311,4 @@ const finder = {
 		}
 	});
   })
-}
-
-function hideElem() {
-	$('.finder-search-text').hide();
 }
