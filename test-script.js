@@ -67,6 +67,9 @@ const finder = {
 	content: '[data-finder-content]',
 	wrapper: '[data-finder-wrapper]',
 	scrollOffset: () => $(finder.wrapper).data('finderScrollOffset'),
+  hideElem: () => {
+	  $('.finder-search-text').hide();
+  },
   activate: () => {
     // console.log("activate")
 		if (!$('#finder').length) {
@@ -123,7 +126,7 @@ const finder = {
 			}).text("Search")
 			.appendTo(finderElemContent);
 
-		const input = $('<input oninput="hideElem()"/>')
+		const input = $('<input oninput="finder.hideElem()"/>')
 			.attr({
 				'id': 'finderInput',
 				'type': 'text',
@@ -306,6 +309,6 @@ const finder = {
   })
 }
 
-function hideElem() {
-	$('.finder-search-text').hide();
-}
+//function hideElem() {
+//	$('.finder-search-text').hide();
+//}
