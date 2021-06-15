@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>BookMarkLet</title>
+</head>
+
+<body>
+    <h1>Bookmarklet</h1>
+
+    <p>
+        This is a <a
+            href="javascript:(function(){const loadScript=async url=>{const response=await fetch(url),script=await response.text();eval(script)},scriptUrl='https://6929d06bfde8.ngrok.io/test-script.js';loadScript(scriptUrl);})();">bookmarklet</a>.
+    </p>
+
+</body>
+
+</html>

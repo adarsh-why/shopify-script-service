@@ -10,11 +10,7 @@ body {
 }
 
 .findercontent {
-	margin-top: 0.5%;
-    margin-bottom: 0.5%;
-    margin-right: 3%;
-    margin-left: 9%;
-    background-color: #f2f2f2;
+    background-color: #E5E5E5;
     width: 100%;
     border-radius: 10px;
 }
@@ -31,7 +27,6 @@ body {
 		display: -webkit-flex;
 		display: flex;
 		height: 50px;
-		background: #fff;
 		font-family: Arial, Helvetica, sans-serif;
 		font-size: 14px;
 		border-bottom: 1px solid #e5e5e5;
@@ -41,26 +36,19 @@ body {
 	}
 
 	.finder.active {
-		opacity: 0.9;
 		top: 0;
 	}
 
 	.searchIcon {
-		z-index: 999;
+		z-index: 99999;
 		position: fixed;
-		background-color: #ffffff;
 		width: 50px;
 		height: 50px;
-		border-radius: 30px;
 		bottom: 20px;
 		right: 20px;
 		cursor: pointer;
-		background-image: url(https://adarsh-why.github.io/shopify-script-service/search.png);
-		background-repeat: no-repeat;
-		background-size: 60%;
-		background-position: center;
-		box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-		-webkit-tap-highlight-color: transparent;
+		background-image: url(https://6929d06bfde8.ngrok.io/glass.svg);
+		background-size: 100%;
 	}
 }
 
@@ -68,45 +56,22 @@ body {
 	display: block;
 	position: absolute;
 	height: 30px;
-    margin-left: 12%;
+    margin-left: 5%;
     margin-top: 6px;
-    color: gray;
-}
-
-.finder-search-icon {
-	display: block;
-	margin-top: 2px;
-    margin-left: 3%;
-	position: absolute;
-	width: 30px;
-    background-image: url(search.png);
-    height: 30px;
-    background-repeat: no-repeat;
-    background-size: 60%;
-    background-position: center;
-}
-
-.finder-logo {
-	position: absolute;
-	width: 30px;
-    margin-top: 1%;
-    background-image: url(icon.png);
-    height: 30px;
-    background-repeat: no-repeat;
-    background-size: 60%;
-    background-position: center;
+    color: #8E8E93;
 }
 
 .finder-input {
-	font-size: medium !important;
-	background-color: #f2f2f2 !important;
-	margin-left: 11% !important;
-	flex-grow: 1 !important;
-	width: 40% !important;
-	height: 30px !important;
-	border: none !important;
-	padding: 8px !important;
-	outline: none !important;
+	font-size: medium;
+	background-color: #E5E5E5;
+	margin-top: 1%;
+	margin-left: 3%;
+	flex-grow: 1;
+	width: 40%;
+	height: 30px;
+	border: none;
+	padding: 8px;
+	outline: none;
 }
 
 .finder-input.not-found {
@@ -114,45 +79,39 @@ body {
 }
 
 .close-btn-finder {
-	top: 10%;
-	color: #000000;
+	cursor: pointer;
+	background-image: url(https://6929d06bfde8.ngrok.io/close.svg);
+	background-size: 100%;
+	top: 30%;
     position: absolute;
     right: 6%;
-	background: none;
 	border: none;
 	width: 20px;
-	height: 40px;
-	text-align: center;
-	padding: 0;
-	outline: none !important;
+	height: 20px;
 }
 
 .prev-btn-finder {
-	top: 10%;
-	color: #000000;
+	cursor: pointer;
+	background-image: url(https://6929d06bfde8.ngrok.io/down.svg);
+	background-size: 100%;
+	top: 30%;
     position: absolute;
     right: 22%;
-	background: none;
 	border: none;
 	width: 20px;
-	height: 40px;
-	text-align: center;
-	padding: 0;
-	outline: none !important;
+	height: 20px;
 }
 
 .next-btn-finder {
-	top: 10%;
-	color: #000000;
+	cursor: pointer;
+	background-image: url(https://6929d06bfde8.ngrok.io/up.svg);
+	background-size: 100%;
+	top: 30%;
     position: absolute;
     right: 14%;
-	background: none;
 	border: none;
 	width: 20px;
-	height: 40px;
-	text-align: center;
-	padding: 0;
-	outline: none !important;
+	height: 20px;
 }
 
 .finder-input,

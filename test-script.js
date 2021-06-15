@@ -12,7 +12,7 @@ $('head').append(
 		`<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<meta http-equiv="content-type" content="application/javascript; charset=UTF-8">
-		<link rel="stylesheet" href="https://adarsh-why.github.io/shopify-script-service/style.css" />
+		<link rel="stylesheet" href="https://6929d06bfde8.ngrok.io/style.css" />
 			<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
 			<!-- CSS -->
 		<link
@@ -21,8 +21,8 @@ $('head').append(
 			integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
 			crossorigin="anonymous"
 		/>
-		<script src="https://adarsh-why.github.io/shopify-script-service/jquery.highlight.js"></script>
-		<script src="https://adarsh-why.github.io/shopify-script-service/jquery.scrollto.js"></script>`
+		<script src="https://6929d06bfde8.ngrok.io/jquery.highlight.js"></script>
+		<script src="https://6929d06bfde8.ngrok.io/jquery.scrollto.js"></script>`
 )
 
   const body = $('body');
@@ -102,22 +102,6 @@ const finder = {
 			})
 			.appendTo(finderElem);
 
-		const sbLogo = $('<div />')
-			.attr({
-				'id': 'finderLogo',
-				'type': 'div',
-				'class': 'finder-logo',
-			})
-			.appendTo(finderElem);
-
-		const searchIcon = $('<div />')
-			.attr({
-				'id': 'finderSearchIcon',
-				'type': 'div',
-				'class': 'finder-search-icon',
-			})
-			.appendTo(finderElemContent);
-
 		const searchText = $('<div />')
 			.attr({
 				'id': 'finderSearchText',
@@ -137,44 +121,26 @@ const finder = {
 			})
 			.appendTo(finderElemContent);
 
-		const prev = $('<button />')
+		const prev = $('<div />')
 			.attr({
 				'id': 'finderPrev',
-				'class': 'prev-btn-finder btn-finder-prev',
+				'class': 'prev-btn-finder',
 			})
 			.appendTo(finderElemContent);
 
-		const prevIcon = $('<i />')
-			.attr({
-				'class': 'fas fa-angle-up',
-			})
-			.appendTo(prev);
-
-		const next = $('<button />')
+		const next = $('<div />')
 			.attr({
 				'id': 'finderNext',
-				'class': 'next-btn-finder btn-finder-next',
+				'class': 'next-btn-finder',
 			})
 			.appendTo(finderElemContent);
 
-		const nextIcon = $('<i />')
-			.attr({
-				'class': 'fas fa-angle-down',
-			})
-			.appendTo(next);
-
-		const close = $('<button />')
+		const close = $('<div />')
 			.attr({
 				'id': 'finderClose',
-				'class': 'close-btn-finder btn-finder-close',
+				'class': 'close-btn-finder',
 			})
 			.appendTo(finderElemContent);
-
-		const closeIcon = $('<i />')
-			.attr({
-				'class': 'fas fa-times',
-			})
-			.appendTo(close);
 	},
 
 	closeFinder: () => {
