@@ -10,6 +10,7 @@ body {
 }
 
 .findercontent {
+	opacity: 0.96;
 	height: 40px;
 	border-bottom: 1px solid #8E8E93;
     background-color: #E5E5E5;
@@ -18,11 +19,13 @@ body {
 }
 
 .finderbox {
-    margin-top: 7px;
+	display: none;
+	opacity: 0.96;
+    margin-top: 4px;
     border: 1px solid #000;
     border-radius: 10px;
     height: 80px;
-    background-color: #fff;
+    background-color: #E5E5E5;
     width: 100%;
 }
 
@@ -52,7 +55,7 @@ body {
 		bottom: 35px;
 		right: 20px;
 		cursor: pointer;
-		background-image: url(https://adarsh-why.github.io/shopify-script-service/glass.svg);
+		/* background-image: url(https://adarsh-why.github.io/shopify-script-service/glass.svg); */
 		background-size: 100%;
 	}
 }
@@ -170,6 +173,6 @@ body {
 }
 
 .suggestion-item {
-	margin-left: 10px;
+	margin-left: 19px;
 	background-color: none !important;
 }
