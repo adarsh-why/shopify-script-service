@@ -3,7 +3,7 @@
 Add the below script in the head of the HTML page
 
 ```js
-<script src="http://adarsh-why.github.io/shopify-script-service/storybrainSearch.js" type="textjavascript"></script>
+<script src="https://adarsh-why.github.io/shopify-script-service/storybrainSearch.js" type="textjavascript"></script>
 ```
 
 ## Basic Usage
@@ -57,7 +57,7 @@ theme: {
 
 `historyItemsCount`: `3` will show only maximum of 3 items in the suggestion box. if the `enableHistory` is set to `false`, then this setting will be of no effect 
 
-`disableDesktop`: `true` will hide the search for any device of width more than `700px`. By default, it is set to false
+`disableDesktop`: `true` will hide the search for any device of width more than `700px`. It is set to `false` by default.
 
 
 ## Default Settings
