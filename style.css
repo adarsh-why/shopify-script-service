@@ -13,7 +13,7 @@ body {
 	opacity: 0.96;
 	height: 40px;
 	border-bottom: 1px solid #8E8E93;
-    background-color: #E5E5E5;
+    /* background-color: #E5E5E5; */
     width: 100%;
     border-radius: 10px;
 }
@@ -25,40 +25,40 @@ body {
     border: 1px solid #000;
     border-radius: 10px;
     height: 80px;
-    background-color: #E5E5E5;
+    /* background-color: #E5E5E5; */
     width: 100%;
 }
 
-@media screen and (max-width: 768px) {
-	.finder {
-		position: fixed;
-		top: -50px;
-		right: 0;
-		left: 0;
-		z-index: 99999;
-		height: 150px;
-		font-family: Arial, Helvetica, sans-serif;
-		font-size: 14px;
-		padding: 5px;
-		transition: top 0.15s ease-out;
-	}
-
-	.finder.active {
-		top: 0;
-	}
-
-	.searchIcon {
-		z-index: 99999;
-		position: fixed;
-		width: 50px;
-		height: 50px;
-		bottom: 35px;
-		right: 20px;
-		cursor: pointer;
-		/* background-image: url(https://adarsh-why.github.io/shopify-script-service/glass.svg); */
-		background-size: 100%;
-	}
+/* @media screen and (max-width: 768px) { */
+.finder {
+	position: fixed;
+	top: -50px;
+	right: 0;
+	left: 0;
+	z-index: 99999;
+	height: 150px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	padding: 5px;
+	transition: top 0.15s ease-out;
 }
+
+.finder.active {
+	top: 0;
+}
+
+.searchIcon {
+	z-index: 99999;
+	position: fixed;
+	width: 50px;
+	height: 50px;
+	bottom: 35px;
+	right: 20px;
+	cursor: pointer;
+	/* background-image: url(http://0aa1c4e725cf.ngrok.io/glass.svg); */
+	background-size: 100%;
+}
+/* } */
 
 .finder-search-text {
 	font-size: 15px;
@@ -72,7 +72,7 @@ body {
 
 .finder-input {
 	font-size: medium !important;
-	background-color: #E5E5E5 !important;
+	/* background-color: #E5E5E5 !important; */
 	margin-top: 5px !important;
 	margin-left: 11px !important;
 	flex-grow: 1 !important;
@@ -89,7 +89,6 @@ body {
 
 .close-btn-finder {
 	cursor: pointer;
-	background-image: url(https://adarsh-why.github.io/shopify-script-service/close.svg);
 	background-size: 100%;
 	top: 10%;
     position: absolute;
@@ -101,7 +100,6 @@ body {
 
 .prev-btn-finder {
 	cursor: pointer;
-	background-image: url(https://adarsh-why.github.io/shopify-script-service/up.svg);
 	background-size: 100%;
 	top: 10%;
     position: absolute;
@@ -113,7 +111,6 @@ body {
 
 .next-btn-finder {
 	cursor: pointer;
-	background-image: url(https://adarsh-why.github.io/shopify-script-service/down.svg);
 	background-size: 100%;
 	top: 10%;
     position: absolute;
@@ -164,13 +161,14 @@ body {
 	flex-grow: 0;
 }
 
-.highlight {
+/* Default highlight colors */
+/* .highlight {
 	background: #ff8;
 }
 
 .highlight.active {
 	background: #ffd71b;
-}
+} */
 
 .suggestion-item {
 	margin-left: 19px;

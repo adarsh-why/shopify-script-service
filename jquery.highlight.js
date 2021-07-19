@@ -44,13 +44,14 @@
  */
 
 jQuery.extend({
-	highlight: function (node, re, nodeName, className) {
+	highlight: function (node, re, nodeName, className, options) {
 		// console.log("node", node, "re", re, "nodename", nodeName, "classname", className)
 		if (node.nodeType === 3) {
 			var match = node.data.match(re);
 			if (match) {
 				var highlight = document.createElement(nodeName || 'span');
 				highlight.className = className || 'highlight';
+				$(".highlight").css("background", options.highlight);
 				var wordNode = node.splitText(match.index);
 				wordNode.splitText(match[0].length);
 				var wordClone = wordNode.cloneNode(true);
@@ -66,7 +67,7 @@ jQuery.extend({
 			!(node.tagName === nodeName.toUpperCase() && node.className === className)) { // skip if already highlighted
 			for (var i = 0; i < node.childNodes.length; i++) {
 				// console.log("node.childNodes[i]", node.childNodes[i])
-				i += jQuery.highlight(node.childNodes[i], re, nodeName, className);
+				i += jQuery.highlight(node.childNodes[i], re, nodeName, className, options);
 			}
 		}
 		return 0;
@@ -74,10 +75,10 @@ jQuery.extend({
 });
 
 jQuery.fn.unhighlight = function (options) {
-	var settings = { className: 'highlight', element: 'span' };
-	jQuery.extend(settings, options);
+	var highlightSetting = { className: 'highlight', element: 'span' };
+	jQuery.extend(highlightSetting, options);
 
-	return this.find(settings.element + "." + settings.className).each(function () {
+	return this.find(highlightSetting.element + "." + highlightSetting.className).each(function () {
 		var parent = this.parentNode;
 		parent.replaceChild(this.firstChild, this);
 		parent.normalize();
@@ -85,9 +86,10 @@ jQuery.fn.unhighlight = function (options) {
 };
 
 jQuery.fn.highlight = function (words, options) {
+	console.log("words", words, "options", options)
 	// console.log("started")
-	var settings = { className: 'highlight', element: 'span', caseSensitive: false, wordsOnly: false };
-	jQuery.extend(settings, options);
+	var highlightSetting = { className: 'highlight', element: 'span', caseSensitive: false, wordsOnly: false };
+	jQuery.extend(highlightSetting, options);
 
 	if (words.constructor === String) {
 		words = [words];
@@ -100,15 +102,15 @@ jQuery.fn.highlight = function (words, options) {
 	});
 	if (words.length == 0) { return this; };
 
-	var flag = settings.caseSensitive ? "" : "i";
+	var flag = highlightSetting.caseSensitive ? "" : "i";
 	var pattern = "(" + words.join("|") + ")";
-	if (settings.wordsOnly) {
+	if (highlightSetting.wordsOnly) {
 		pattern = "\\b" + pattern + "\\b";
 	}
 	var re = new RegExp(pattern, flag)
 
 	return this.each(function () {
 		// console.log("this", this)
-		jQuery.highlight(this, re, settings.element, settings.className);
+		jQuery.highlight(this, re, highlightSetting.element, highlightSetting.className, options);
 	});
 };

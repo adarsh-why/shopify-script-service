@@ -9,11 +9,11 @@ document.getElementsByTagName("head")[0].appendChild(script)
 //   `<meta charset="utf-8" />
 //   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 //   <meta http-equiv="content-type" content="application/javascript; charset=UTF-8">
-//   <link rel="stylesheet" href="https://adarsh-why.github.io/shopify-script-service/style.css" />
+//   <link rel="stylesheet" href="http://0aa1c4e725cf.ngrok.io/style.css" />
 //     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
 //     <!-- CSS -->
-//   <script src="https://adarsh-why.github.io/shopify-script-service/jquery.highlight.js"></script>
-//   <script src="https://adarsh-why.github.io/shopify-script-service/jquery.scrollto.js"></script>`
+//   <script src="http://0aa1c4e725cf.ngrok.io/jquery.highlight.js"></script>
+//   <script src="http://0aa1c4e725cf.ngrok.io/jquery.scrollto.js"></script>`
 // )
 
 var historyArr = []
@@ -26,7 +26,7 @@ function handler(color = "black") {
     async: false
   });
 
-  // $.getJSON("https://adarsh-why.github.io/shopify-script-service/settings.json", function(data){
+  // $.getJSON("http://0aa1c4e725cf.ngrok.io/settings.json", function(data){
   //   settings = data
   //   console.log("data", data)
   // }).fail(function(){
@@ -37,11 +37,11 @@ function handler(color = "black") {
     `<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<meta http-equiv="content-type" content="application/javascript; charset=UTF-8">
-		<link rel="stylesheet" href="https://adarsh-why.github.io/shopify-script-service/style.css" />
+		<link rel="stylesheet" href="http://0aa1c4e725cf.ngrok.io/style.css" />
 			<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
 			<!-- CSS -->
-		<script src="https://adarsh-why.github.io/shopify-script-service/jquery.highlight.js"></script>
-		<script src="https://adarsh-why.github.io/shopify-script-service/jquery.scrollto.js"></script>`
+		<script src="http://0aa1c4e725cf.ngrok.io/jquery.highlight.js"></script>
+		<script src="http://0aa1c4e725cf.ngrok.io/jquery.scrollto.js"></script>`
   )
 
   const body = $("body")
