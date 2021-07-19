@@ -15,7 +15,7 @@ var dSettings = {
   }
 }
 
-function validateSettings(settings) {
+function validateSettings(settings=dSettings) {
   if ('theme' in settings) {
     let dtheme = dSettings.theme
     let theme = settings.theme
