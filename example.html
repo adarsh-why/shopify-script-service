@@ -8,7 +8,7 @@
       const settings = {
         theme: {
           textColor: "brown",
-          backgroundColor: "cyan",
+          backgroundColor: "yellow",
           highlight: "orange",
           activeHighlight: "blue",
         },
@@ -16,11 +16,14 @@
         historyItemsCount: 4,
         disableDesktop: true
       }
+      window.onload = function() {
+        storybrainSearch(settings)
+      }
     </script>
   </Head>
 
 <!-- <Body onload="storybrainSearch()"> -->           <!-- Empty Params will show default color  -->
-  <Body onload="storybrainSearch(settings)">            Color can be specified by name
+  <Body>            Color can be specified by name
   <body>
     <p>Storybrain Search Example</p>
 
