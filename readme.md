@@ -6,7 +6,7 @@ Use Quick start below to start the search on the go. Check for advanced usage fo
 
 Simply Copy paste the code in the head of the HTML and you are ready to use the search.
 
-```js
+```html
     <script src="https://adarsh-why.github.io/shopify-script-service/storybrainSearch.js" type="text/javascript"></script>
     <script>
       window.onload = function() {
@@ -18,7 +18,7 @@ Simply Copy paste the code in the head of the HTML and you are ready to use the 
 ## Advanced Usage
 
 Add the below script with custom values in the head of HTML. As you see there is a settings and that settings is passed on to the storybrainSearch method to customize the search
-```js
+```html
     <script src="https://adarsh-why.github.io/shopify-script-service/storybrainSearch.js" type="text/javascript"></script>
     <script>
       const settings = {
