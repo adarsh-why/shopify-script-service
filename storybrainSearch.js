@@ -41,7 +41,7 @@ function storybrainSearch(settings) {
   });
 
   $(document).ready(function () {
-    if (settings.disableDesktop && $(window).width() > 700) {
+    if (settings.disableDesktop && $(window).width() > 1024) {
       $("#searchIcon").hide();
     }
   });
