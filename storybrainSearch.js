@@ -300,7 +300,7 @@ function storybrainSearch(settings) {
       let scrollingElement
 
       let i = finder.currentResult - 1
-      $(".highlight").removeClass("active")
+      $(".highlight").removeClass("active").css("background", settings.theme.highlight)
       $(`.highlight:eq(${i})`).addClass("active").css("background", settings.theme.activeHighlight)
 
       let offsetTop = -100
